@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		494BAD3C2ABEF91B0098C75D /* RhythmPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BAD3B2ABEF91B0098C75D /* RhythmPadApp.swift */; };
+		494BAD3E2ABEF91B0098C75D /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BAD3D2ABEF91B0098C75D /* PlayView.swift */; };
+		494BAD402ABEF91D0098C75D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494BAD3F2ABEF91D0098C75D /* Assets.xcassets */; };
+		494BAD432ABEF91D0098C75D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494BAD422ABEF91D0098C75D /* Preview Assets.xcassets */; };
+		494BAD4A2ABEFCE90098C75D /* PadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BAD492ABEFCE90098C75D /* PadButton.swift */; };
+		494BAD4C2ABF019B0098C75D /* ButtonSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BAD4B2ABF019B0098C75D /* ButtonSettingView.swift */; };
+		496D59F82AC5CDE100E7DFF6 /* AudioRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D59F72AC5CDE100E7DFF6 /* AudioRecordingView.swift */; };
+		496D59FA2AC5CF0500E7DFF6 /* RecordAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D59F92AC5CF0500E7DFF6 /* RecordAudio.swift */; };
+		496D5A1C2AC72FDF00E7DFF6 /* AudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D5A1B2AC72FDF00E7DFF6 /* AudioViewModel.swift */; };
+		498C84FD2AE587F900E8AD40 /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C84FC2AE587F900E8AD40 /* PlayViewModel.swift */; };
+		4994BEB32ACECB8400A0F49D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4994BEB22ACECB8400A0F49D /* Realm */; };
+		4994BEB52ACECB8400A0F49D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4994BEB42ACECB8400A0F49D /* RealmSwift */; };
+		4994BEB92AD3B21000A0F49D /* AudioSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994BEB82AD3B21000A0F49D /* AudioSettingView.swift */; };
+		49EB9E582ACD5175002C3F27 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9E572ACD5175002C3F27 /* MainTabView.swift */; };
+		49EB9E5A2ACD519E002C3F27 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9E592ACD519E002C3F27 /* TabItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		494BAD382ABEF91B0098C75D /* RhythmPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhythmPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		494BAD3B2ABEF91B0098C75D /* RhythmPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmPadApp.swift; sourceTree = "<group>"; };
+		494BAD3D2ABEF91B0098C75D /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		494BAD3F2ABEF91D0098C75D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		494BAD422ABEF91D0098C75D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		494BAD492ABEFCE90098C75D /* PadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadButton.swift; sourceTree = "<group>"; };
+		494BAD4B2ABF019B0098C75D /* ButtonSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSettingView.swift; sourceTree = "<group>"; };
+		496D59F72AC5CDE100E7DFF6 /* AudioRecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingView.swift; sourceTree = "<group>"; };
+		496D59F92AC5CF0500E7DFF6 /* RecordAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudio.swift; sourceTree = "<group>"; };
+		496D5A1B2AC72FDF00E7DFF6 /* AudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewModel.swift; sourceTree = "<group>"; };
+		498C84FC2AE587F900E8AD40 /* PlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		4994BEB82AD3B21000A0F49D /* AudioSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSettingView.swift; sourceTree = "<group>"; };
+		49EB9E562ACB3CCA002C3F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49EB9E572ACD5175002C3F27 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		49EB9E592ACD519E002C3F27 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		494BAD352ABEF91B0098C75D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4994BEB52ACECB8400A0F49D /* RealmSwift in Frameworks */,
+				4994BEB32ACECB8400A0F49D /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		494BAD2F2ABEF91B0098C75D = {
+			isa = PBXGroup;
+			children = (
+				494BAD3A2ABEF91B0098C75D /* RhythmPad */,
+				494BAD392ABEF91B0098C75D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		494BAD392ABEF91B0098C75D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				494BAD382ABEF91B0098C75D /* RhythmPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		494BAD3A2ABEF91B0098C75D /* RhythmPad */ = {
+			isa = PBXGroup;
+			children = (
+				49EB9E562ACB3CCA002C3F27 /* Info.plist */,
+				494BAD3B2ABEF91B0098C75D /* RhythmPadApp.swift */,
+				494BAD3F2ABEF91D0098C75D /* Assets.xcassets */,
+				494BAD412ABEF91D0098C75D /* Preview Content */,
+				498C85002AE5917C00E8AD40 /* Entities */,
+				498C84FE2AE5907100E8AD40 /* Views */,
+				496D5A1B2AC72FDF00E7DFF6 /* AudioViewModel.swift */,
+				498C84FC2AE587F900E8AD40 /* PlayViewModel.swift */,
+			);
+			path = RhythmPad;
+			sourceTree = "<group>";
+		};
+		494BAD412ABEF91D0098C75D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				494BAD422ABEF91D0098C75D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		498C84FE2AE5907100E8AD40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				498C84FF2AE590B700E8AD40 /* SettingViews */,
+				494BAD3D2ABEF91B0098C75D /* PlayView.swift */,
+				496D59F72AC5CDE100E7DFF6 /* AudioRecordingView.swift */,
+				49EB9E572ACD5175002C3F27 /* MainTabView.swift */,
+				494BAD492ABEFCE90098C75D /* PadButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		498C84FF2AE590B700E8AD40 /* SettingViews */ = {
+			isa = PBXGroup;
+			children = (
+				494BAD4B2ABF019B0098C75D /* ButtonSettingView.swift */,
+				4994BEB82AD3B21000A0F49D /* AudioSettingView.swift */,
+			);
+			path = SettingViews;
+			sourceTree = "<group>";
+		};
+		498C85002AE5917C00E8AD40 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				49EB9E592ACD519E002C3F27 /* TabItem.swift */,
+				496D59F92AC5CF0500E7DFF6 /* RecordAudio.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		494BAD372ABEF91B0098C75D /* RhythmPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494BAD462ABEF91D0098C75D /* Build configuration list for PBXNativeTarget "RhythmPad" */;
+			buildPhases = (
+				494BAD342ABEF91B0098C75D /* Sources */,
+				494BAD352ABEF91B0098C75D /* Frameworks */,
+				494BAD362ABEF91B0098C75D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RhythmPad;
+			packageProductDependencies = (
+				4994BEB22ACECB8400A0F49D /* Realm */,
+				4994BEB42ACECB8400A0F49D /* RealmSwift */,
+			);
+			productName = RhythmPad;
+			productReference = 494BAD382ABEF91B0098C75D /* RhythmPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		494BAD302ABEF91B0098C75D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					494BAD372ABEF91B0098C75D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 494BAD332ABEF91B0098C75D /* Build configuration list for PBXProject "RhythmPad" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 494BAD2F2ABEF91B0098C75D;
+			packageReferences = (
+				4994BEB12ACECB8400A0F49D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 494BAD392ABEF91B0098C75D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				494BAD372ABEF91B0098C75D /* RhythmPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		494BAD362ABEF91B0098C75D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494BAD432ABEF91D0098C75D /* Preview Assets.xcassets in Resources */,
+				494BAD402ABEF91D0098C75D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		494BAD342ABEF91B0098C75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498C84FD2AE587F900E8AD40 /* PlayViewModel.swift in Sources */,
+				496D59FA2AC5CF0500E7DFF6 /* RecordAudio.swift in Sources */,
+				494BAD4C2ABF019B0098C75D /* ButtonSettingView.swift in Sources */,
+				49EB9E582ACD5175002C3F27 /* MainTabView.swift in Sources */,
+				4994BEB92AD3B21000A0F49D /* AudioSettingView.swift in Sources */,
+				496D5A1C2AC72FDF00E7DFF6 /* AudioViewModel.swift in Sources */,
+				496D59F82AC5CDE100E7DFF6 /* AudioRecordingView.swift in Sources */,
+				494BAD3E2ABEF91B0098C75D /* PlayView.swift in Sources */,
+				494BAD3C2ABEF91B0098C75D /* RhythmPadApp.swift in Sources */,
+				49EB9E5A2ACD519E002C3F27 /* TabItem.swift in Sources */,
+				494BAD4A2ABEFCE90098C75D /* PadButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		494BAD442ABEF91D0098C75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		494BAD452ABEF91D0098C75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		494BAD472ABEF91D0098C75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RhythmPad/Preview Content\"";
+				DEVELOPMENT_TEAM = 7854ZCLQD4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RhythmPad/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "録音します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ne.jp.haru0117.n-softbank.RhythmPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		494BAD482ABEF91D0098C75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RhythmPad/Preview Content\"";
+				DEVELOPMENT_TEAM = 7854ZCLQD4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RhythmPad/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "録音します";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ne.jp.haru0117.n-softbank.RhythmPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		494BAD332ABEF91B0098C75D /* Build configuration list for PBXProject "RhythmPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494BAD442ABEF91D0098C75D /* Debug */,
+				494BAD452ABEF91D0098C75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494BAD462ABEF91D0098C75D /* Build configuration list for PBXNativeTarget "RhythmPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494BAD472ABEF91D0098C75D /* Debug */,
+				494BAD482ABEF91D0098C75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4994BEB12ACECB8400A0F49D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.43.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4994BEB22ACECB8400A0F49D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4994BEB12ACECB8400A0F49D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		4994BEB42ACECB8400A0F49D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4994BEB12ACECB8400A0F49D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 494BAD302ABEF91B0098C75D /* Project object */;
+}
