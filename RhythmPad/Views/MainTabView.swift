@@ -2,13 +2,8 @@ import SwiftUI
 
 struct MainTabView: View {
     @State private var selection: TabItem = .play
-    private let playViewModel: PlayViewModel
-    private let audioViewModel: AudioViewModel
-
-    init(playViewModel: PlayViewModel, audioViewModel: AudioViewModel) {
-        self.playViewModel = playViewModel
-        self.audioViewModel = audioViewModel
-    }
+    private let playViewModel: PlayViewModel = PlayViewModel()
+    private let audioViewModel: AudioViewModel = AudioViewModel()
     
     var body: some View {
         TabView(selection: $selection) {
@@ -38,6 +33,6 @@ struct MainTabView: View {
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabView(playViewModel: .init(), audioViewModel: .init())
+        MainTabView()
     }
 }

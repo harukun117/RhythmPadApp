@@ -22,10 +22,12 @@ class AudioViewModel: NSObject, ObservableObject, AVAudioPlayerDelegate {
 
     override init() {
         super.init()
-        fetchDeta()
+        let config = Realm.Configuration(schemaVersion: 1)
+        Realm.Configuration.defaultConfiguration = config
+        fetchData()
     }
 
-    func fetchDeta() {
+    func fetchData() {
         DispatchQueue.main.async { [self] in
             guard let realm = try? Realm() else {
                 return
@@ -160,8 +162,7 @@ class AudioViewModel: NSObject, ObservableObject, AVAudioPlayerDelegate {
         }
 
         do {
-            let config = Realm.Configuration(schemaVersion: 1)
-            Realm.Configuration.defaultConfiguration = config
+
             let realm = try Realm()
 
             try realm.write {
@@ -171,7 +172,7 @@ class AudioViewModel: NSObject, ObservableObject, AVAudioPlayerDelegate {
                 realm.add(audioData)
                 print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true))
             }
-            fetchDeta()
+            fetchData()
         } catch {
             print("Error saving audio to Realm: \(error.localizedDescription)")
         }
@@ -234,7 +235,7 @@ class AudioViewModel: NSObject, ObservableObject, AVAudioPlayerDelegate {
                     realm.delete(itemToDelete)
                     print("Realmファイルも削除しました")
                 }
-                fetchDeta()
+                fetchData()
             } catch {
                 print("エラーが発生しました: \(error)")
             }
@@ -258,7 +259,7 @@ class AudioViewModel: NSObject, ObservableObject, AVAudioPlayerDelegate {
                     item[0].audioName = newName
                 }
             }
-            fetchDeta()
+            fetchData()
         } catch {
             print("Error update audio to Realm: \(error.localizedDescription)")
         }

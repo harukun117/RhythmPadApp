@@ -1,23 +1,33 @@
 import Foundation
+import SwiftUI
+import AVFoundation
 
 class PlayViewModel: ObservableObject {
+    @Published var showAlert = false
     @Published var pushedSettingButton: Bool = false
-    @Published var buttonIDs: Array<Int> = Array()
-    @Published var padButtons: Array<PadButton> = Array()
-    @Published var buttonID: Int = 0
+    @Published var padButtons: Array<ButtonInformation> = Array()
 
-    func addButton(audioViewModel: AudioViewModel) {
-        padButtons.append(PadButton(id: buttonID, playViewModel: self, audioViewModel: audioViewModel))
-        buttonIDs.append(buttonID)
-        buttonID += 1
+
+    func addButton() {
+        if padButtons.count < 12 {
+            padButtons.append(ButtonInformation())
+        } else {
+            showAlert = true
+        }
     }
 
-    func deleteButton(at id: Int) {
-        if let deleteToIndex = buttonIDs.firstIndex(of: id) {
-            buttonIDs.remove(at: deleteToIndex)
-            padButtons.remove(at: deleteToIndex)
+    func deleteButton(at index: Int) {
+        padButtons.remove(at: index)
+        for i in 0 ..< padButtons.count {
+            padButtons[i].index = i
+        }
+    }
+
+    func check(index: Int, i: Int) -> Bool {
+        if index < i * 3 + 3 {
+            return true
         } else {
-            print("Invalid index")
+            return false
         }
     }
 }
